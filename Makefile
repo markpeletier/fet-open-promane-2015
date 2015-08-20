@@ -91,3 +91,6 @@ TOWRITE: *.tex */*.tex
 
 TAGS: *.tex */*.tex
 	etags *.tex */*.tex
+
+guide.pdf: guide.md
+	pandoc -s --variable=documentclass:revtex4-1 --variable=classoptions:pre --variable=classoptions:notitlepage $< -o $@
