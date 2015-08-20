@@ -93,4 +93,4 @@ To edit the files, there are several options:
    the fork button at https://github.com/pdebuyl-lab/fet-open-promane-2015) the
    main repository. open a terminal and type `git clone
    git@github.com:YOURUSERNAME/fet-open-promane-2015`
-   You may start working
+   You may start working. To make your changes available, use `git push`
