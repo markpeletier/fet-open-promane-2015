@@ -5,15 +5,16 @@ process for editing the files jointly.
 
 ## The files
 
-The proposal is found in the `*.tex` files in this repository. The main LaTeX
+The proposal is found in the `*.tex` files in this directory. The main LaTeX
 file is `proposal.tex`. It uses the LaTeX class
 [LaTeX-proposal](https://github.com/KWARC/LaTeX-proposal/) developed by Michael
 Kohlhase.
+The reference files for the project are the ones located online at the URL
+<https://github.com/pdebuyl-lab/fet-open-promane-2015>.
+The files are stored in a tracker system called [git](http://git-scm.com/) about
+which you can read at the end of this document.
 
-The reference files for the project are the ones located in this online
-repository. They are tracked with the [git](http://git-scm.com/) system.
-
-### Input files
+#### Input files
 
 The general content of the project is divided by sections, corresponding to the
 FET-Open template: [excellence.tex](excellence.tex), [impact.tex](impact.tex)
@@ -31,7 +32,11 @@ send them directly to Pierre by email.
 *Summary:* take care of the files that are specific to you or your site and
  coordinate with Christian for the body of the project.
 
-### Output
+For reference, the FET-Open call contains general directions and is found at the
+URL
+<http://ec.europa.eu/research/participants/portal/desktop/en/opportunities/h2020/calls/h2020-fetopen-2014-2015-ria.html>
+
+#### Output files
 
 The pdf files from the proposal are `draft.pdf` and `final.pdf`. The former
 contains the instructions from the original template file and work annotations
@@ -55,8 +60,8 @@ version of `LaTeX-proposal`. Solutions to that problem:
 ## Editing the proposal
 
 The proposal is a regular LaTeX file. So any equation, etc, will work fine.
-
 A few recommendations:
+
 - Avoid lists as they take a lot of space.
 - If you need a list anyway, use the `compactitem` environment instead of
   `itemize`. The LaTeX package [paralist](http://ctan.org/pkg/paralist) has
@@ -102,6 +107,5 @@ To edit the files, there are several options:
    "publish" them so that the changes are made available to others.
 3. use git in a command line. First, login to the website and "fork" (clic on
    the fork button at https://github.com/pdebuyl-lab/fet-open-promane-2015) the
-   main repository. open a terminal and type `git clone
-   git@github.com:YOURUSERNAME/fet-open-promane-2015`
+   main repository. open a terminal and type `git clone git@github.com:YOURUSERNAME/fet-open-promane-2015`
    You may start working. To make your changes available, use `git push`
