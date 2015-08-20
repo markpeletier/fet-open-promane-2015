@@ -13,6 +13,8 @@ Kohlhase.
 The reference files for the project are the ones located in this online
 repository. They are tracked with the [git](http://git-scm.com/) system.
 
+### Input files
+
 The general content of the project is divided by sections, corresponding to the
 FET-Open template: [excellence.tex](excellence.tex), [impact.tex](impact.tex)
 and [implementation.tex](implementation.tex).
@@ -26,6 +28,19 @@ There are appropriate templates. Please copy either the template (or someone
 else's file) to create the files that "belong" to you. Either add them online or
 send them directly to Pierre by email.
 
+*Summary:* take care of the files that are specific to you or your site and
+ coordinate with Christian for the body of the project.
+
+### Output
+
+The pdf files from the proposal are `draft.pdf` and `final.pdf`. The former
+contains the instructions from the original template file and work annotations
+made by using the `draft` LaTeX environment. `final.pdf` is a cleaned out
+version that is appropriate for submission.
+
+Several items (Gantt charts for instance) are generated automatically by the
+LaTeX package. This is a very useful feature to avoid unnecessary work.
+
 It is impossible to compile the files directly because the reliance on the local
 version of `LaTeX-proposal`. Solutions to that problem:
 - Use the provided makefile and run `make -B draft` and `make -B final`.
@@ -36,10 +51,6 @@ version of `LaTeX-proposal`. Solutions to that problem:
   compile using `pdflatex draft` and `pdflatex final`.
 - Install the provided `LaTeX-proposal` files in your LaTeX path and run
   `texhash`.
-
-*Summary:* take care of the files that are specific to you or your site and
- coordinate with Christian for the body of the project.
-
 
 ## Editing the proposal
 
