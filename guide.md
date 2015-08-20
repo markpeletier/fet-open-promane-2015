@@ -81,6 +81,7 @@ Any past state of the repository can be retrieved.
 ### Ways to operate on the git repository
 
 To edit the files, there are several options:
+
 1. login on https://github.com/, navigate to a file in
    https://github.com/pdebuyl-lab/fet-open-promane-2015 and clic the pen
    icon. when done editing, go to the bottom of the page and clic "commit".
@@ -90,8 +91,6 @@ To edit the files, there are several options:
    "publish" them so that the changes are made available to others.
 3. use git in a command line. First, login to the website and "fork" (clic on
    the fork button at https://github.com/pdebuyl-lab/fet-open-promane-2015) the
-   main repository. open a terminal and type
-
-       git clone git@github.com:YOURUSERNAME/fet-open-promane-2015
-   
+   main repository. open a terminal and type `git clone
+   git@github.com:YOURUSERNAME/fet-open-promane-2015`
    You may start working
