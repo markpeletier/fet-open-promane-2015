@@ -1,33 +1,55 @@
-\begin{workpackage}[id=management,type=MGT,wphases=0-48!.2,swsites,
+\begin{workpackage}[id=management,type=MGT,wphases=0-48!.2,
   title=Project Management,short=Management,
-  lead=KUL,KULRM=12,PAR2RM=6,PAR3RM=6]
+  lead=KUL,KULRM=24]
 
 \begin{wpobjectives}
 
-Maintain a clear direction to the scientific developments.
+Provide efficient communication and practical support for the project's events,
+including IT support.
 %
-Provide efficient communication and practical support for the project's events.
+Serve as contact for the media.
 %
 Ensure timely and consistent reporting on the project advance and monitor the
 progress of other work packages and deliverables.
+%
+Coordinate the technolog
 
 \end{wpobjectives}
 
 \begin{wpdescription}
-  Management of the project.
+
+The coordinator node, via the project manager, oversees the project from the
+administrative point of view. Each role remains responsible for its internal
+(accounting, hiring, etc) management while general project issues will be
+handled at the KUL, including communication to and from the European Commission.
+
 \end{wpdescription}
 
 \begin{tasklist}
-\begin{task}[title=Management tasks 1,id=mgt-task-1,lead=KUL,PM=18,wphases={0-48!0.25,0-24!0.25},
-  partners={KUL,PAR2}]
+\begin{task}[title=Reporting,id=mgt-reporting,lead=KUL,PM=6,wphases=0-48!0.125]
 
-  Management tasks 1.
+Preparation of yearly reports, including the project's final report.
 
 \end{task}
 
-\begin{task}[title=Management tasks 2,id=mgt-task-1,lead=PAR3,PM=6,wphases=24-48!0.25]
+\begin{task}[title=Meetings,id=mgt-meetings,lead=KUL,PM=6,wphases=0-48!0.125]
 
-  Management tasks 2.
+Organization of the kickoff and subsequent meetings.
+
+\end{task}
+
+\begin{task}[title=IT,id=mgt-IT,lead=KUL,PM=6,wphases=0-48!0.125]
+
+Setup and regular update of the project's website.
+%
+Preparation of data, when needed, for sharing via open data repositories.
+
+\end{task}
+
+\begin{task}[title=comm,id=mgt-comm,lead=KUL,PM=6,wphases=0-48!0.125]
+
+Preparation of media content for the communication of the project: press
+releases, videos, illustrations.
 
 \end{task}
 \end{tasklist}
@@ -35,9 +57,17 @@ progress of other work packages and deliverables.
 \begin{wpdelivs}
   \begin{wpdeliv}[due=1,miles=start,id=ca,dissem=CO,nature=R,lead=KUL]{Consortium Agreement}
   \end{wpdeliv}
-  \begin{wpdeliv}[due=1,miles=start,id=tickets,dissem=PU,nature=DEC,lead=KUL]{Infrastructure}
+  \begin{wpdeliv}[due=1,miles=start,id=tickets,dissem=PU,nature=DEC,lead=KUL]{Web site}
   \end{wpdeliv}
-  \begin{wpdeliv}[due=6,miles=start,id=data,dissem=PU,nature=R,lead=PAR3]{Hosting}
+  \begin{wpdeliv}[due=6,miles=start,id=data,dissem=PU,nature=R,lead=KUL]{Hosting}
+  \end{wpdeliv}
+  \begin{wpdeliv}[due=24,miles=mymile1,id=comm,dissem=PU,nature=R,lead=KUL]{General public media}
+  \end{wpdeliv}
+  \begin{wpdeliv}[due=24,miles=mymile1,id=ca,dissem=CO,nature=R,lead=KUL]{Technological Report 1}
+  \end{wpdeliv}
+  \begin{wpdeliv}[due=48,miles=finalmile,id=finalreport,dissem=PU,nature=R,lead=KUL]{Final report of the project}
+  \end{wpdeliv}
+  \begin{wpdeliv}[due=48,miles=finalmile,id=ca,dissem=CO,nature=R,lead=KUL]{Technological Report 2}
   \end{wpdeliv}
 \end{wpdelivs}
 
