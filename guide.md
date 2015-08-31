@@ -3,6 +3,9 @@
 This FET proposal will be written collaboratively. This document presents the
 process for editing the files jointly.
 
+Page limit for "B part": 16 pages, including the title page. This limit includes
+the sections "1. Excellence", "2. Impact" and "3. Implementation".
+
 ## The files
 
 The proposal is found in the `*.tex` files in this directory. The main LaTeX
