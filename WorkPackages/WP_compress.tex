@@ -2,53 +2,54 @@
   short=Nonequilibrium compressibility, %XXX act. WP,% for Figure 5.
   title=Nonequilibrium compressibility, % XXX actual Work Package,
   lead=Padova,
-  PadovaRM=12,
-  PAR2RM=6,
+  PadovaRM=24,
   PAR3RM=24]
+
+
+
 
 \begin{wpobjectives}
   The objectives of this WP are:
   \begin{compactitem}
-  \item Find the response to compression for bodies holding a heat flow
-  \item Find if an averaged description (no microscopic details) may lead to effective fluctuation-response relations
-  \item Understand if negative differential compressibilities can be realized
-  \item Understand how active systems do respond to compression
+  \item Understanding the response to compression of systems holding a heat flow
+  \item Finding if an averaged description (no microscopic details) may lead to effective fluctuation-response relations
+  \item Understanding if we can realize bodies with negative differential compressibilities if subject to thermal gradients 
   \end{compactitem}
 \end{wpobjectives}
 
 \begin{wpdescription}
+
 Monitoring the volume of a system in equilibrium represents a standard procedure for assessing its state variables.
 We know for example that for a gas in equilibrium there are state equations relating pressure and temperature to
 the volume. Also the response to a compression is predictable by knowing the equilibrium correlations between the
 compressing force and the volume, thanks to the fluctuation-dissipation theorem. The situation is less clear far
 from equilibrium: how should we characterize the response to compression of a gas maintained between two temperatures?
-Another example of unknown response would be that of ``active gases'', represented for example by bacteria within
-a permeable box. In this case a compression would likely expel the water from the pores and expose our sensors
-to a different interaction with the compressed bacteria. It is not trivial to predict by common sense the behavior 
-of the system under these conditions. We would naively expect a reduction of the volume by increasing the external
-compression, but there are already several examples of anomalous, or negative, response in nonequilibrium systems.
-We have in mind the example of negative differential mobility, where a particle starts to drift slower by increasing
-the external drive.
 
-Of course another class of systems for which we need to understand the nonequilibrium response is that of solids.
+It is not trivial to predict by common sense the behavior of systems under nonequilibrium conditions. 
+One would naively expect a reduction of the volume by increasing the external compression, but there are already 
+several examples of anomalous, or negative, response in nonequilibrium systems.
+We have in mind instances of negative differential mobility, occurring when a particle starts to drift 
+slower by increasing the external drive.
+
+Of course an important class of systems for which we need to understand the nonequilibrium response is that of solids.
 There are important technological applications that involve keeping a metal in a temperature gradient, a condition
 that generates heat flows and constant entropy production. To name a couple, strongly
 heated micro-cantilevers and high-quality table-top oscillators of gravitational wave detectors are definitely
 systems for which the study of nonequilibrium fluctuations and response is timely and relevant.
-Cantilevers of the size up to $\approx 1 mm$ are used as devices to measure microscopic forces. To operate, a laser
-may be pointed at their tip, so that a heat flux is installed from there to the base attached to a frame acting
-as a heat sink. Recently it was found that vibrational modes of this system hold uneven amounts of energy.
-Similar procedure and results, but on a larger scale, pertain the dynamics of table-top gravitational wave detectors.
+%Cantilevers of the size up to $\approx 1 mm$ are used as devices to measure microscopic forces. To operate, a laser
+%may be pointed at their tip, so that a heat flux is installed from there to the base attached to a frame acting
+%as a heat sink. Recently it was found that vibrational modes of this system hold uneven amounts of energy.
+%Similar procedure and results, but on a larger scale, pertain the dynamics of table-top gravitational wave detectors.
+%Given the uneven distribution of energy among modes and the constant flow of energy between them, it is not
+%possible to use notions of equilibrium statistical mechanics to guess how the system would respond to a compressive 
+%periodic forcing. To this end, one needs to develop response theory of nonequilibrium systems.
 
-All these examples stimulate the characterization of nonequilibrium systems with entropic flows, either macroscopically
- evident as in temperature gradients or microscopically ``hidden'' in the chemical reactions that drive bacteria. 
-We focus on a particular feature, namely compressibility, of such nonequilibrium systems and we aim at understanding
-how the response to compression takes place and, more importantly,
-may be predicted by just knowing steady-state correlations
-between observable and suitable descriptors of the system. The queen observable in this case would be the size of the
-system. For this, the approach could be rephrased as a study of a nonequilibrium compressibility. The theoretical 
-approaches from which to start, however, would allow a broader treatment and a focus on more general observables 
-(e.g. internal energy, variances, flows of energy, etc.).
+These examples stimulate the characterization of nonequilibrium systems with heat flows.
+We focus on the particular response coefficient of compressibility.
+Thus, for nonequilibrium systems we aim at 
+understanding how the response to compression takes place and how it
+may be predicted by just knowing suitable (unperturbed) steady-state correlations.
+This understanding is important for a second, main stage of this WP, as explained next.
 
 The theoretical tools we will use in the study of nonequilibrium compressibility are based on a recent line of research
 that aims at studying nonequilibrium linear response for stochastic systems. From such approach there emerges an
@@ -61,25 +62,54 @@ how a system, upon perturbation, becomes more or less active in its dynamics. Th
 to measure delicate microscopic details, which could not be easily accessible experimentally. Hence, on the practical
 side we have the important task to adapt the theoretical framework to the available experimental capabilities.
 
+The possibility to extract energy from an installed heat channel is the mechanism that we want to
+analyze, to see if it can lead to the behavior of negative differential compressibility,
+i.e.~the system expands when compressed. 
+Nonequilibrium response may be written as an entropic term minus a frenetic one.
+In our case the former is the correlation between the size of the system and the entropy produced by the compression.
+The frenetic term is another correlation between size and dynamical aspects that can be monitored numerically.
+This scheme thus furnishes us with a guideline to distinguish if simulations of a specific material is yielding data 
+going in the direction of negative compressibility. In particular, since typically the entropic term is positive, we
+are encouraged to privilege the development of models that show a large frenetic term, so that its subtraction from
+the entropic one gives a total negative response.
+We have in this way delineated a guided trial-and-error strategy, in which the notions of 
+nonequilibrium statistical mechanics help us in faster developments of numerical studies. This is expected to
+speed up the research if compared to a blind trial-and-error strategy.
 
+A successful achievement in finding models of materials that have negative compressibility,
+if subject to heat flows, may trigger technological applications with immense
+relevance. Metamaterials are indeed nowadays much studied because, for example, micro-actuators would be
+more easily realized if materials with a negative compressibility were introduced. We will investigate
+if steady nonequilibrium conditions could produce this effect, as opposed to the recently considered 
+mechanism of rearrangements from metastable states or of enhanced expansions in orthogonal directions
+due to a wine-rack structure of the materials. 
+Our study as a byproduct would yield in any case a deeper understanding on the compressibility
+and on the vibrational modes of solids kept in temperature gradient and experiencing thus a heat flux.
+
+In conclusion it is important to note that (a) the anomalous response we seek is in the direction 
+of the compression, (b) that it is due to compression-enhanced extraction of energy from a heat channel,
+which is prompt, excites the system expanding it, 
+and does not require going through an hysteresis of the material, and (c) that, even if
+the outcome of our investigation would be that negative compressibility is not emerging, we would still 
+have a timely comprehensive study of compressibility of solids in a temperature gradient. In this sense,
+we can consider this WP as a {\em low} risk high reward research plan!
 
 
 
 \end{wpdescription}
-
 \begin{tasklist}
 
-  \begin{task}[title=TASK1,id=task1,PM=15,lead=Padova,wphases=0-12!0.5]
+  \begin{task}[title=TASK1,id=task1,PM=12,lead=Padova,wphases=0-24!0.5]
 
     First task of the project: 
-    for models of solids between two plates at different temperatures, 
-    thus experiencing a heat flow, we plan to characterize the response to compression, mostly by applying 
-    available formulations to the study of numerical simulations. The main aim is to make a setup for the
-    other tasks.
+    we plan to characterize the response to compression
+    for models of solids experiencing a heat flow due to different boundary temperatures.
+    by applying available theoretical formulations to the study of numerical simulations,
+    the main aim is to make a setup for the other tasks.
     
   \end{task}
 
-  \begin{task}[title=TASK2,id=task2,PM=15,lead=PAR2,wphases=9-24!0.5]
+  \begin{task}[title=TASK2,id=task2,PM=12,lead=PAR2,wphases=0-24!0.5]
 
     Second task of the project: 
     we are interested in finding if microscopic details, available of course in simulations, 
@@ -91,44 +121,36 @@ side we have the important task to adapt the theoretical framework to the availa
     
   \end{task}
 
-  \begin{task}[title=TASK3,id=task3,PM=15,lead=Padova,wphases=12-45!1.0]
+  \begin{task}[title=TASK3,id=task3,PM=24,lead=Padova,wphases=24-48!1.0]
 
     Third task of the project: 
-    we aim at finding peculiar inter-particle potentials that may lead to unusual
-    compressibility in systems experiencing heat flows. The possibility to extract energy
-    from an installed heat channel might in fact lead to the behavior of negative differential compressibility,
-    i.e.~the system expands when compressed. 
-    Though we plan to mainly operate at the conceptual level of toy
-    models, a successful achievement on this direction might trigger technological applications with immense
-    relevance. Metamaterials are indeed nowadays much studied because, for example, micro-actuators would be
-    more easily realized if materials with a negative compressibility were introduced. We will investigate
-    if steady nonequilibrium conditions could produce this effect, as opposed to the recently considered 
-    mechanism of rearrangements from metastable states. It is not easy to predict the success of this line,
-    which is thus a high-risk high reward task of this WP.
+    as a main task of this WP,
+    we aim at finding peculiar inter-particle potentials that may lead to negative 
+    compressibility in solids experiencing heat flows. 
+    We plan to first operate at the conceptual level of toy models, and then to move
+    at a more detailed level of realistic models. We use an effective guided
+    trial-and-error strategy to promote simulations of models with large
+    frenetic term in the response.
     
   \end{task}
 
-  \begin{task}[title=TASK4,id=task4,PM=15,lead=Padova,wphases=36-48!0.5]
-
-    {\bf [THIS MIGHT BE SHIFTED TO OTHER COLLABORATIONS]}
-    Fourth task of the project: 
-    understanding how active systems do respond to compression is pretty much
-    synonymous of assessing whether state equations relating pressure to temperature, volume, and internal
-    interaction parameters, are available for active matter. We aim at studying the compressibility of
-    models of bacterial colonies, both from the theoretical side and by analyzing simulations of active matter.
-    
-  \end{task}
 
 
 \end{tasklist}
 
 \begin{wpdelivs}
-  \begin{wpdeliv}[due=12,id=mydeliv1,dissem=PU,nature=DEM,lead=Padova]
-      {First deliverable, after 1 year.}
+  \begin{wpdeliv}[due=24,id=mydeliv1,dissem=PU,nature=DEM,lead=Padova]
+      {First deliverable, after 2 years: characterization of compressibility for solids between two temperatures.}
   \end{wpdeliv}
   \begin{wpdeliv}[due=24,id=mydeliv2,dissem=PU,nature=DEM,lead=PAR2]
-      {Second deliverable, after 2 years.}
+      {Second deliverable, after 2 years: clear picture on how microscopic details are needed to predict compressibility from experiments}
+\end{wpdeliv}
+  \begin{wpdeliv}[due=48,id=mydeliv3,dissem=PU,nature=DEM,lead=Padova]
+      {Third deliverable, after 4 years: characterization of the compressibility for a wide class of heat-conduction models, understanding of whether negative compressibility is achievable in real systems.}
 \end{wpdeliv}
 \end{wpdelivs}
+
+
+
 
 \end{workpackage}
