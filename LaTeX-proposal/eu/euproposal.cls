@@ -125,7 +125,7 @@
 \newmdenv[frametitle=Objectives]{wpobjectives}
 \newmdenv[frametitle=Description]{wpdescription}
 \renewenvironment{workpackage}[1][]
-{\begin{work@package}[#1]\medskip\wpheadertable%
+{\hrule height 0.2em\begin{work@package}[#1]\medskip\wpheadertable%
 \addcontentsline{toc}{subsubsection}{\wp@label\wp@num: \pdataref{wp}\wp@id{title}}}
 {\end{work@package}}
 \newcounter{@sitespo}\newcounter{@sitespt}

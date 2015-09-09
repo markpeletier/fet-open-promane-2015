@@ -8,11 +8,17 @@
 \usepackage{float}  % used to suppress floating of tables in Resources section.
 \usetikzlibrary{calc,fit,positioning,shapes,arrows,snakes}
 
-\addbibresource{kwarc.bib}
+\addbibresource{bibliography.bib}
 \input{WApersons} % Some sections of the included files depend on this.
 \usepackage{comments}
 \usepackage{framed}
 
+\defbibenvironment{proposal-env}
+{\inparaenum}
+{\endinparaenum}
+{ \item}
+
+\defbibheading{proposal-bib}[References]{\paragraph*{#1}}
 
 \begin{document}
 
@@ -23,9 +29,9 @@
   site=KUL,
   site=Padova,
   site=Leipzig,
-  site=MPI IS,
+  site=USTUTT,
   site=TUE,
-  site=PAR3,
+  site=FZU,
   botupPM, % we want to work via bottom up PM distribution,
   coordinator=cmaes,
   coordinatorsite=KUL,
@@ -146,12 +152,9 @@ any other supporting documents specified in the work programme for this call.
 \input{Participants/KUL.tex}
 \input{Participants/Padova.tex}
 \input{Participants/Leipzig.tex}
-\input{Participants/mpiis.tex}
-\clearpage
+\input{Participants/Stuttgart.tex}
 \input{Participants/TUE.tex}
-\clearpage
-\input{Participants/PAR3.tex}
-\clearpage
+\input{Participants/FZU.tex}
 
 \subsection{Third Parties Involved in the Project (including use of third party resources)}
 \label{section:ThirdParties}
