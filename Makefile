@@ -45,8 +45,8 @@ install: final
 	git push
 
 bbl:	$(BBL)
-$(BBL): %.bbl: %.aux
-	bibtex -min-crossrefs=100 -terse $<
+$(BBL): %.bbl: %.bcf
+	biber $<
 
 $(TSIMP.pdf): %.pdf: %.tex $(PROPCLS) $(PDATA)
 	$(PDFLATEX) $< || $(RM) $@

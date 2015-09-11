@@ -69,7 +69,7 @@
 \end{center}
 \newpage
 \setcounter{tocdepth}{2}\setcounter{part}{2}}
-{\newpage\printbibliography[heading=warnpubs,maxnames=999]}
+{}
 \def\prop@gen@instrument{Proposal Instrument (e.g. IP)}
 \define@key{site@desc}{box}[true]{\def\site@desc@box{#1}%
 \pdata@def{sitedesc}{\@site}{box}{#1}}
