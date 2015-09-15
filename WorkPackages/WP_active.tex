@@ -1,24 +1,22 @@
 \begin{workpackage}[id=WPactive,wphases=0-48,
   short=Active Particle Suspensions,% for Figure 5.
   title=Probing Active Particle Suspensions with Colloids and Polymers,
-  lead=ULEI,
-  ULEIRM=96,UNIPDRM=6,USTUTTRM=2]
+  lead=Leipzig,
+  LeipzigRM=96,PadovaRM=6,USTUTTRM=2]
 
 \newrefsection
 
 \begin{wpobjectives}
-The objectives of this WP are:
   \begin{compactitem}
   \item \textbf{Non-Equilibrium Equations of State (NEOS):} explore the existence of
   macroscopic non-equilibrium equations of state for active Brownian particle suspensions
   with microscopic many-particle models
   \item \textbf{Active Crowding:} elucidate by analytical model calculations how mechanical
-  and chemical activity (such as by molecular motors in the cytoplasm of animal cells)
-  affects the statistical mechanics of embedded biopolymers (such as protein fibers or DNA)
+  and chemical activity, such as by molecular motors in the cytoplasm of animal cells,
+  affects the statistical mechanics of embedded biopolymers
   \item \textbf{Noise Temperature:} validate the concept of a frequency-dependent noise
-  temperature in non-equilibrium fluctuation-dissipation relations and the failure of
-  Onsager's regression hypothesis for colloidal probes in non-isothermal solvents by
-  experiments and computer simulations
+  temperature in fluctuation-dissipation relations for colloidal probes 
+  in non-isothermal solvents by experiments and computer simulations
   \item \textbf{Active-Particle Suspensions:} scrutinize tentative non-equilibrium equations
   of state by a combination of experiments and all-atom non-equilibrium molecular-dynamics
   simulations
@@ -51,16 +49,15 @@ temperature \cite{falasco-etal:2014}.
 We want to validate this result experimentally and to see to what extent something similar be achieved for other 
 non-equilibria, particularly in active-particle suspensions.
 
-Further, far from equilibrium, the mechanical pressure on a mesoscopic probe will generally hinge on the range and 
-symmetry of the medium-probe interactions: if an active-particle suspension is compressed by a piston, the
-amount of work needed to reach a prescribed amount of compression depends on the type of
-piston used (e.g.\ how hard or soft its surface is), and the pressure can be macroscopically
-anisotropic and heterogeneous in absence of macroscopic stationary fluxes. 
+Further, far from equilibrium, the mechanical pressure on a mesoscopic probe will generally depend on the range and 
+symmetry of the medium-probe interactions: if an active-particle suspension is compressed, the
+amount of work needed may depend on the surface properties of the piston, and it can be macroscopically
+anisotropic and heterogeneous in absence of stationary fluxes. 
 %
 We want to elucidate this within a many-body theory of ``dry active matter'' \cite{marchetti-etal:2013}, 
 to which we successively add elements of ``wet reality'' \cite{zoettl-stark:2014}.
 
-Similarly, the myriads of motile proteins and motors in a living cell cause deviations of the function
+Similarly, motile proteins and motors in a living cell cause deviations of the function
 of its constituents with respect to conventional equilibrium predictions.  We call this
 effect ``active crowding'', in analogy with the much studied ``molecular crowding''. 
 %
@@ -83,72 +80,74 @@ computer simulations).
 
 \begin{tasklist}
 
-\begin{task}[title=Non-Equilibrium Equations of State (NEOS),id=task1,PM=8,lead=ULEI,partners={UNIPD,USTUTT},wphases=0-48!0.5]
+\begin{task}[title=Non-Equilibrium Equations of State (NEOS),id=task1,PM=8,lead=Leipzig,partners={Padova,USTUTT},
+wphases=0-48!0.5]
 As a paradigm for a non-equilibrium medium we consider the (experimentally vast) class of
 active-particle suspensions, in collaboration with the group in Padova providing expert knowledge on 
 non-equilibrium response theory.
 %
 Our starting point is a many-body Langevin equation with a Markovian Gaussian noise
 (describing the coupling to an equilibrium heat bath) and individual propulsion forces for
-particles representing, on an all-atom-level, the "dry" active fluid far from equilibrium \cite{solon-etal:2015}. 
+the particles representing, on an all-atom-level, the active fluid far from equilibrium \cite{solon-etal:2015}. 
 %
 We let the fluid interact perturbatively with one large colloidal probe particle to
-deduce its effective friction kernel, and with two or more probe particles in order to
+deduce its effective friction kernel, and with more probe particles in order to
 detect their induced mutual interactions, non-gradient forces, and a possible breaking of
-the action-reaction principle on the coarse-grained probe level.  
+the action-reaction principle on the probe level.  
 %
-Non-equilibrium response theory lets us, in particular, include frenetic contributions in the response 
+Non-equilibrium response theory lets us include frenetic contributions in the response 
 functions \cite{baiesi-wynants:2009}.
 %
 Of special interest to us is the mechanical pressure exerted by an active fluid on a probe, 
-in particular if we relax the very special geometric symmetries tacitly imposed in previous approaches.
+especially if we relax geometric symmetries (tacitly) imposed in previous approaches.
 
 To add elements of reality, we then introduce more realistic particle-probe interactions, as appropriate for the hot 
 Janus particles that we sudy in our experiments and simulations.
 %
-The results should help to clarify how active-particle suspensions are fundamentally different from externally driven systems, 
-a question we want to elucidate in collaboration with Stuttgart, by searching   
-the connection between our particle-based approach and their field theoretical approach.
+To clarify how active-particle suspensions are fundamentally different from externally driven systems, 
+we will search, in close collaboration with Stuttgart, the connection between our particle-based approach 
+and their field theoretical approach.
 
 \end{task}
 
-\begin{task}[title=Active Crowding,id=task2,lead=ULEI,wphases=0-48!0.5]
+\begin{task}[title=Active Crowding,id=task2,lead=Leipzig,wphases=0-48!0.5]
 Pioneering attempts to estimate how the activity in a living cell affects the physical behavior
 of its constituents predict that it will, via hydrodynamic interactions, enhance the diffusion of
-passive globular probes or cell organelles \cite{mikhailov-kapral:2015}.
+globular probes or cell organelles \cite{mikhailov-kapral:2015}.
 %
 Yet, it remains open, how such partial results get modified if one considers, for example, that motors or
 other sources of non-equilibrium do often act directly on cytoskeletal polymers and their
 weak transient networks that may get disrupted.
 %
-In particular, we want to consider how three different types of active
+We want to  investigate how three different types of active
 crowding affect the fluctuation spectrum and dynamics of a semiflexible test polymer: a
 laser-heated metal nanoparticle tracer attached to a micron-sized semiflexible polymer such
-as an actin microfilament; power strokes exerted by attached molecular
-motors and inducing backbone tension spikes along the polymer contour; the ``inelastic'' \cite{gralka-kroy:2015}
+as an actin microfilament; power strokes of attached molecular
+motors inducing backbone tension spikes along the polymer contour; ``inelastic'' \cite{gralka-kroy:2015}
 unbinding of weak bonds, which are the ubiquitous cement of
 cytoskeletal structures, under static or dynamic loads.
 %
 This may have interesting conceptual consequences for mechanical homeostasis, i.e., how cells and tissues bear up against 
 their own activity.   
 %
-On the technological side, it would be most useful to find conditions for a formal mapping to the situation in 
-non-isothermal liquids, via frequency-dependent noise temperatures and effective friction coefficients.
+On the technological side, it would be most useful to explore conditions for a formal mapping to the situation in 
+non-isothermal liquids, via frequency-dependent noise temperatures and 
+effective friction coefficients \cite{falasco-etal:2014}.
 %
-For these tasks we can rely on our strong track record of first-principle analytical studies
-of the non-linear non-equilibrium dynamics of biopolymers \cite{otto-etal:2013}, non-quasistatic bond kinetics
-under strong external forcing \cite{bullerjahn-sturm-kroy:2014}, and hot Brownian motion \cite{rings-etal:2010}.
+For these tasks we can build on our previous first-principle analytical studies
+of non-linear non-equilibrium biopolymer dynamics \cite{otto-etal:2013}, non-quasistatic forcible 
+bond kinetics \cite{bullerjahn-sturm-kroy:2014}, and hot Brownian motion 
+\cite{rings-etal:2010,falasco-etal:2014}.
 
 \end{task}
 
 
-\begin{task}[title=Noise Temperature,id=task3,lead=ULEI,wphases=0-24!0.5]
-We have recently established a tractable ``drosophila'' for the central theme of the
-proposal, i.e.\ probing macroscopic non-equilibria, in terms so-called non-isothermal (or
-``hot'') Brownian motion \cite{rings-etal:2010,chakraborty-etal:2011}.
+\begin{task}[title=Noise Temperature,id=task3,lead=Leipzig,wphases=0-24!0.5]
+We have recently established a tractable ``drosophila'' for the central theme of probing 
+macroscopic non-equilibria in terms so-called non-isothermal (or ``hot'') Brownian motion \cite{rings-etal:2010}.
 %
-Its key quantity is a frequency-dependent
-temperature for the Brownian noise strength (``noise temperature'') \cite{falasco-etal:2014}.
+Its key quantity is a frequency-dependent temperature for the Brownian noise 
+strength (``noise temperature'') \cite{falasco-etal:2014}.
 %
 Corner stones of statistical mechanics, such as the fluctuation-dissipation theorem, can
 thereby be generalized to conditions far from equilibrium.  
@@ -159,14 +158,16 @@ a heated Brownian particle on a nanosecond timescale with a positional accuracy 
 that has, even under conventional \emph{equilibrium} conditions, only very recently been achieved \cite{kheifets-etal:2014}.
 %
 A dedicated optical trap with dual beam heating and a detection bandwidth of about 50 MHz
-will therefore be newly constructed.
+will therefore be newly constructed. 
+%
+Thereby the classical method of Brownian thermometry shall be extended to media far from equilibrium.
 
 To test the theory also by massively parallel numerical simulations \cite{chakraborty-etal:2011}, 
 we will extend the theory for hot nanoparticles in incompressible fluids 
 to Lennard--Jones solvents, which exhibit a substantial compressibility.
 \end{task}
 
-\begin{task}[title=Active-Particle Suspensions,id=task4,lead=ULEI,wphases=24-48!0.5]
+\begin{task}[title=Active-Particle Suspensions,id=task4,lead=Leipzig,wphases=24-48!0.5]
 Technological applications of active-particle suspensions and systematic tests of
 uncontrolled approximations that are currently unavoidable in all theoretical studies are
 currently severely hampered by a lack of control over these systems.
@@ -194,16 +195,16 @@ state \cite{ginot-etal:2015} due to wall interactions and ensuing "ratcheting" e
 \printbibliography[heading=proposal-bib,env=proposal-env]
 
 \begin{wpdelivs}
-\begin{wpdeliv}[due=12,id=D2.3,dissem=PU,nature=DEM,lead=ULEI]
+\begin{wpdeliv}[due=12,id=D2.3,dissem=PU,nature=DEM,lead=Leipzig]
       {Experimental set-up for noise temperature measurement}
   \end{wpdeliv}
-  \begin{wpdeliv}[due=24,id=D2.1,dissem=PU,nature=DEM,lead=ULEI]
+  \begin{wpdeliv}[due=24,id=D2.1,dissem=PU,nature=DEM,lead=Leipzig]
       {Theoretical set-up for dynamics in active crowding}
   \end{wpdeliv}
-  \begin{wpdeliv}[due=24,id=D2.2,dissem=PU,nature=DEM,lead=ULEI]
+  \begin{wpdeliv}[due=24,id=D2.2,dissem=PU,nature=DEM,lead=Leipzig]
       {Theoretical and numerical models for NEOS of active matter}
 \end{wpdeliv}
-  \begin{wpdeliv}[due=36,id=D2.4,dissem=PU,nature=DEM,lead=ULEI]
+  \begin{wpdeliv}[due=36,id=D2.4,dissem=PU,nature=DEM,lead=Leipzig]
       {Experimental setup for NEOS-test with hot Janus particles}
 \end{wpdeliv}
 \end{wpdelivs}
