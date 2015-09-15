@@ -57,7 +57,7 @@
   %   {\prop@gen@topicsaddressed}\\[1em]
   \item[Coordinator:] \wa@ref{person}\prop@gen@coordinator{name}
   \item[e-mail:] \wa@ref{person}\prop@gen@coordinator{email}
-  \item[tel/fax:] \wa@ref{person}\prop@gen@coordinator{worktelfax}
+  \item[tel:] \wa@ref{person}\prop@gen@coordinator{worktel}
     \@ifundefined{prop@gen@keywords}{}{\item[Keywords:]  \prop@gen@keywords}
   \end{description}
 \end{large}
