@@ -40,7 +40,6 @@
 \renewenvironment{prop@proposal}
 {\thispagestyle{empty}\begin{center}
   {\Large \prop@gen@instrument}\\[.2cm]
-  {\Large\textbf\prop@gen@callname}\\[.4cm]
   {\LARGE \prop@gen@callid}\\[.8cm]
   {\huge\textbf\prop@gen@title}\\[.4cm]
   {\LARGE Acronym: {\prop@gen@acronym}}\\[2cm]
@@ -67,7 +66,6 @@
 \@ifundefined{prop@gen@iconrowheight}{}
 {\@for\@site:=\prop@gen@sites\do{\wa@institution@logo[height=\prop@gen@iconrowheight]\@site\qquad}}
 \end{center}
-\newpage
 \setcounter{tocdepth}{2}\setcounter{part}{2}}
 {}
 \def\prop@gen@instrument{Proposal Instrument (e.g. IP)}
