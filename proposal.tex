@@ -14,7 +14,8 @@
 \usepackage{framed}
 
 \defbibenvironment{proposal-env}
-{\inparaenum}
+{\inparaenum%
+\renewcommand*\labelenumi{[\theenumi]}}
 {\endinparaenum}
 { \item}
 

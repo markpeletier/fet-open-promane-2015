@@ -51,7 +51,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 \RequirePackage[scaled=.90]{helvet}
 \RequirePackage{textcomp}
-\RequirePackage[sorting=none,hyperref=auto,style=numeric,defernumbers=false,backend=biber,backref=true,firstinits=true,maxbibnames=2]{biblatex}[2010/11-19]
+\RequirePackage[sorting=none,hyperref=auto,bibstyle=proposal-numeric,defernumbers=false,backend=biber,firstinits=true,maxbibnames=2]{biblatex}[2010/11-19]
 \RequirePackage{csquotes}
 \RequirePackage{mdframed}
 \RequirePackage{pdata}
