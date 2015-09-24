@@ -45,7 +45,7 @@
 \AtBeginDocument{\ifpublic\excludecomment{private}\fi}
 \RequirePackage{tikz}
 \RequirePackage{paralist}
-\RequirePackage[a4paper,margin=18mm]{geometry}
+\RequirePackage[a4paper,margin=16mm]{geometry}
 \RequirePackage{boxedminipage}
 \renewcommand{\thempfootnote}{\roman{mpfootnote}}
 \renewcommand{\familydefault}{\sfdefault}
@@ -570,7 +570,7 @@ ganttgray,.60/.60,.60,.60/0,0,.60/0,0,0,.40}
 \ifx\wpfig@end\@true&\@sw{\wpfig@legend@end}\fi}%
 \if@sites%
 \@for\@site:=\prop@gen@sites\do{%
-\xdef\wpfig@headline{\wpfig@headline&\@sw{\wpfig@legend@siteRM{\@site}}}%
+\xdef\wpfig@headline{\wpfig@headline& {\wpfig@legend@siteRM{\@site}}}%
 \if@RAM\xdef\wpfig@headline{\wpfig@headline&\@sw{\wpfig@legend@siteRAM{\@site}}}\fi}%
 \xdef\wpfig@headline{\wpfig@headline&\@sw{\wpfig@legend@totalRM}}%
 \if@RAM\xdef\wpfig@headline{\wpfig@headline&\@sw{\wpfig@legend@totalRAM}}\fi%
@@ -595,7 +595,7 @@ ganttgray,.60/.60,.60,.60/0,0,.60/0,0,0,.40}
 \newcommand\wpfig@legend@end{\textbf{end}}
 \newcommand\wpfig@legend@siteRM[1]{\site{#1}\if@RAM\ RM\fi}
 \newcommand\wpfig@legend@siteRAM[1]{\site{#1}\ RAM}
-\newcommand\wpfig@legend@totalRM{total\if@RAM\ RM\fi}
+\newcommand\wpfig@legend@totalRM{total~ \if@RAM\ RM\fi}
 \newcommand\wpfig@legend@totalRAM{total RAM}
 \newcommand\wpfig@legend@RM{RM}
 \newcommand\wpfig@legend@RAM{RAM}
