@@ -424,7 +424,7 @@
 \pdataref{mile}\@I{verif}}
 \xdef\mst@lines{\mst@lines\@@line\tabularnewline\hline}}}
 \begin{table}[ht]
-\begin{tabular}{|l|p{2.5cm}|p{7cm}|l|p{4cm}|}\hline
+\begin{tabular}{|l|p{2.5cm}|p{4cm}|l|p{7cm}|}\hline
 \#&\textbf{\miles@legend@name}
 &\textbf{\miles@legend@involved}
 &\textbf{\miles@legend@month}
