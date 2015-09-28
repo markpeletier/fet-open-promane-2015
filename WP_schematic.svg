@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="drawing.svg">
+   sodipodi:docname="WP_schematic.svg">
   <defs
      id="defs4">
     <marker
@@ -111,7 +111,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.88"
-     inkscape:cx="195.03863"
+     inkscape:cx="270.55336"
      inkscape:cy="44.306618"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -206,7 +206,7 @@
          id="tspan3816">Numerical code</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-style:normal;font-weight:normal;font-size:11px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="266.07361"
        y="848.52167"
        id="text3818"
@@ -214,7 +214,7 @@
          sodipodi:role="line"
          id="tspan3820"
          x="266.07361"
-         y="848.52167">WP 2, 3 &amp; 4</tspan><tspan
+         y="848.52167">WP 2, 3, 4 &amp; 5</tspan><tspan
          sodipodi:role="line"
          x="266.07361"
          y="862.27167"
