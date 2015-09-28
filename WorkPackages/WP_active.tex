@@ -10,18 +10,18 @@
 \mobjectives
 %
   \begin{compactitem}
-  \item Derive \textbf{nonequilibrium equations of state (NEOS)} for active Brownian
-  particle suspensions from microscopic many-particle models.
-  \item Characterize the motion of embedded biopolymers in situations of \textbf{active
-    crowding} by molecular motors in the cytoplasm of animal cells.
-  \item Validate the concept of a frequency-dependent \textbf{noise temperature} in
-  fluctuation-dissipation relations for colloidal probes.
+  \item Derive from microscopic many-particle models and check numerically and experimentally 
+  \textbf{nonequilibrium equations of state (NEOS)} for active Brownian particle suspensions.
+  \item Characterize fluctuations and response of polymeric probes affected by \textbf{active
+    crowding}, e.g. biopolymers excited by molecular motors in the cytoplasm of animal cells.
+  \item Validate in experiment and simulation the concept of a frequency-dependent \textbf{noise temperature} 
+  in fluctuation-dissipation relations for colloidal probes.
   \end{compactitem}
 
 \mdescription
 %
 Far from equilibrium, fluctuations are non-universal and standard thermodynamic notions,
-such as temperature and pressure, become ambiguous.
+such as temperature and pressure, become ambiguous. 
 This has many unintuitive practical consequences, which defy conventional thermodynamic
 wisdom and potentially invalidate standard technological procedures.
 %
@@ -32,16 +32,14 @@ in terms of a frequency-dependent noise temperature \cite{falasco-etal:2014}.
 We will validate these ideas experimentally and extend them for other
 nonequilibria, e.g. in active-particle suspensions.
 %
-Further, far from equilibrium, the mechanical pressure on a mesoscopic probe will generally depend on the range and 
-symmetry of the medium-probe interactions. 
+Similarly, the mechanical pressure on a mesoscopic probe will depend on the range and symmetry 
+of the medium-probe interactions \cite{solon-etal:2015}. We will elucidate how. 
 %
-In the context of living cells, motile proteins and motors affect the function
-of its constituents by what  we call ``active crowding'', in analogy with the much studied ``molecular crowding''. 
+In the context of living cells, motile proteins and molecular motors affect the function
+of its constituents by what  we call ``active crowding'', in analogy with the much studied ``molecular crowding'',
+which can be probed by the conformational degrees of freedom of embedded biopolymers  \cite{otto-etal:2013}.
 %
-Any biopolymer in a living cell actually represents a smart probe that scans its environment with its many 
-degrees of freedom \cite{otto-etal:2013}.
-%
-We could account for the effect of quenched static crowding by a parameter renormalization \cite{schoebl-etal:2014}.  
+The effect of quenched static crowding can be captured by a parameter renormalization \cite{schoebl-etal:2014}.  
 %
 Here we ask: can something similar be achieved for active crowding?
 \end{mdframed}
@@ -71,17 +69,17 @@ we will compare our particle-based approach to the field theoretical approach pu
 \end{task}
 
 \begin{task}[title=Active Crowding,id=task2,lead=ULEI,partners={KUL},wphases=0-48!0.5]
-We investigate via experiments three different types of active crowding that affect the fluctuation spectrum and dynamics of
-a semiflexible test polymer \cite{otto-etal:2013}: an attached laser-heated metal nanoparticle tracer, power strokes of
-molecular motors inducing backbone tension spikes and ``inelastic'' \cite{gralka-kroy:2015} unbinding of weak (cytoskeletal)
-bonds under arbitrarily fast dynamic loading \cite{bullerjahn-sturm-kroy:2014}.
+We investigate by analytical theory three different schematic types of active crowding 
+that affect the fluctuation spectrum and dynamics of a semiflexible test polymer \cite{otto-etal:2013}: 
+power strokes of molecular motors inducing backbone tension spikes,
+``inelastic'' \cite{gralka-kroy:2015}unbinding of weak (cytoskeletal) bonds under 
+arbitrarily fast dynamic loading \cite{bullerjahn-sturm-kroy:2014}, and an attached laser-heated metal nanoparticle tracer.
 \end{task}
 
 \begin{task}[title=Noise Temperature,id=task3,lead=ULEI,wphases=0-24!0.5]
-We test the recent predictions of non-isothermal Brownian motion \cite{rings-etal:2010,falasco-etal:2014}, 
-beyond the Markov limit. Therefore, we need to adapt the theory 
-to our massively parallel numerical simulations \cite{chakraborty-etal:2011}, 
-which use (highly compressible) Lennard--Jones solvents.
+We test recent predictions for non-isothermal Brownian motion \cite{rings-etal:2010,falasco-etal:2014}  
+beyond the Markov limit. Our massively parallel numerical simulations \cite{chakraborty-etal:2011} 
+employ (highly compressible) Lennard--Jones solvents, to which we will adapt the theory.
 Experimentally, this requires to follow the fluctuations of 
 a heated Brownian particle on a nanosecond timescale and picometer spatial resolution, which has
 \emph{even in equilibrium} only recently become possible  \cite{kheifets-etal:2014}.
