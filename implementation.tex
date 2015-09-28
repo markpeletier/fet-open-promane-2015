@@ -104,4 +104,10 @@ Also, some experimental deliverables are of a very generic nature. The output of
 \delivref{WPbrown}{brown-d1} is interesting {\em independently} of nonequilibrium
 physics.
 
-\milestonetable
+\makeatletter
+\ifnum\pdataref@num{all}{milestones}{count}=0
+Milestone table missing. Please run \LaTeX\ again.%
+\else%
+\milestonetable%
+\fi
+\makeatother
