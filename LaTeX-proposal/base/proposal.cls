@@ -399,7 +399,7 @@
 \@milestone{\mile@id}{#2}{#3}% presentation
 \else\deliv@error\fi}
 \newcommand\@milestone[3]{% id, title, description
-\item \textbf{Milestone \pdataref{mile}{#1}{label} (Month \pdataref{mile}\mile@id{month})
+\item \textbf{Milestone \pdata@target{mile}{#1}{\pdataref{mile}{#1}{label}} (Month \pdataref{mile}\mile@id{month})
 \textbf{#2}} #3}
 \newenvironment{milestones}%
 {\ifdelivs\begin{@milestones}\else\deliv@error\fi}
@@ -825,7 +825,7 @@ ganttgray,.60/.60,.60,.60/0,0,.60/0,0,0,.40}
 \@for\@I:=\@@miles\do{%
 \edef\@@month{\pdataref@safe{mile}{\@I}{month}}
 \draw[very thick,blue] (\@@month,\gantt@ymiles@top) -- (\@@month,0);
-\node[blue] at (\@@month,\gantt@ymiles) {\pdataref{mile}{\@I}{label}};}
+\node[blue] at (\@@month,\gantt@ymiles) {\pdataRef{mile}{\@I}{label}};}
 \fi %gantt@miles
 \end{tikzpicture}}
 \newdimen\gantt@ymid\newdimen\gantt@yinc\newdimen\gantt@xend
