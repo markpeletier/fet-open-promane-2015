@@ -406,7 +406,7 @@
 {\ifdelivs\pdata@def{all}{mile}{ids}{\mile@stones}%
 \pdata@def{all}{mile}{count}{\themilestone}%
 \end{@milestones}\fi}
-\newenvironment{@milestones}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{@milestones}{\begin{compactenum}}{\end{compactenum}}
 \newcommand\milestonetable{%
 {\gdef\mst@lines{}%initialize
 \let\tabularnewline\relax\let\hline\relax% so they
