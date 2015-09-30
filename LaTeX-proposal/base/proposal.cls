@@ -580,10 +580,8 @@ ganttgray,.60/.60,.60,.60/0,0,.60/0,0,0,.40}
 \if@RAM\begin{tabular}{|l|l|*{\thewpfig@options}{r|}*{\the@sites}{r|r|}|r|r|}\hline
 \else\begin{tabular}{|l|l|*{\thewpfig@options}{r|}|*{\the@sites}{r|}|r|}\hline\fi%|
 \wpfig@headline\\\hline\hline}
-{\end{tabular}\smallskip\\
-\wpfig@legend@RAM@expl
-\if@sites; \wpfig@legend@lead@expl\fi
-\@ifundefined{wpfig@label}{\caption{\wpfig@legend@caption}}{\caption{\wpfig@caption}}
+{\end{tabular}
+\@ifundefined{wpfig@label}{\caption{\wpfig@legend@caption}}{\caption{\wpfig@caption \wpfig@legend@RAM@expl \if@sites; \wpfig@legend@lead@expl\fi}}
 \@ifundefined{wpfig@label}{\label{fig:wplist}}{\label{\wpfig@label}}
 \end{center}\end{table}}
 \newcommand\wpfig@legend@wap{\textbf{\ifwork@areas{WA/P}\else{WP}\fi}}
@@ -600,7 +598,7 @@ ganttgray,.60/.60,.60,.60/0,0,.60/0,0,0,.40}
 \newcommand\wpfig@legend@RM{RM}
 \newcommand\wpfig@legend@RAM{RAM}
 \newcommand\wpfig@legend@RAM@expl{\if@RAM R(A)M $\widehat=$ Researcher (Assistant) Months\else\ Efforts in PM\fi}
-\newcommand\wpfig@legend@lead@expl{WP lead efforts \wp@lead@style@explained}
+\newcommand\wpfig@legend@lead@expl{WP lead efforts \wp@lead@style@explained.}
 \newcommand\wpfig@legend@caption{{\ifwork@areas Work Areas and \fi}Work Packages}
 \def\wpfig@style{}
 \newcommand\wpfigstyle[1]{\def\wpfig@style{#1}}
